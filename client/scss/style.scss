@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.col-1 {
+  flex-basis: 8.333%;
+}
+.col-2 {
+  flex-basis: 16.666%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+.col-4 {
+  flex-basis: 33.333%;
+}
+.col-5 {
+  flex-basis: 41.666%;
+}
+.col-6 {
+  flex-basis: 50%;
+}
+.col-7 {
+  flex-basis: 58.333%;
+}
+.col-8 {
+  flex-basis: 66.666%;
+}
+.col-9 {
+  flex-basis: 75%;
+}
+.col-10 {
+  flex-basis: 83.333%;
+}
+.col-11 {
+  flex-basis: 91.666%;
+}
+.col-12 {
+  flex-basis: 100%;
+}
+.col-s-6 {
+  flex-basis: 50%;
+}
+.col-s-4 {
+  flex-basis: 33.333%;
+}
+.col-s-5 {
+  flex-basis: 41.666%;
+}
+.col-s-6 {
+  flex-basis: 50%;
+}
+.col-s-7 {
+  flex-basis: 58.333%;
+}
+.col-s-12 {
+  flex-basis: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+ul,
+li {
+  padding: 0;
+}
+h2 {
+  margin: 0;
+}
+
+.construction-page {
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  height: 300px;
+}

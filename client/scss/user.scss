@@ -1,0 +1,80 @@
+.signup {
+  justify-content: center;
+  margin: 15px 60px 30px;
+  align-items: baseline;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    margin: 10px;
+    align-items: normal;
+  }
+  .title {
+    margin-bottom: 15px;
+  }
+  .login-form {
+    label {
+      display: block;
+      position: relative;
+      margin: 10px;
+      width: 75%;
+      @media only screen and (max-width: 480px) {
+        width: 95%;
+      }
+      input {
+        height: 3.5em;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #d7d7d7;
+      }
+      input + span {
+        color: #bbbcbd;
+        position: absolute;
+        top: 0.5em;
+        transition: top 0.15s;
+      }
+      input:focus + span,
+      input:valid + span,
+      input[data-value]:not(:focus):invalid + span {
+        top: -0.75em;
+        font-size: 0.75em;
+      }
+      input:focus {
+        border-bottom-color: #8cd9dd;
+      }
+      input:focus + span {
+        color: #8cd9dd;
+      }
+    }
+    button {
+      background-color: #d10157;
+      color: #fff;
+      outline: none;
+      border: none;
+      padding: 10px;
+      width: 75%;
+      margin: 20px 10px 0;
+      cursor: pointer;
+      @media only screen and (max-width: 480px) {
+        width: 95%;
+      }
+    }
+  }
+  .error,
+  .success {
+    opacity: 0;
+  }
+  .error.active {
+    color: red;
+    transition: opacity 2s linear;
+    opacity: 1;
+    padding: 10px;
+  }
+  .success.active {
+    color: green;
+    transition: opacity 2s linear;
+    opacity: 1;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,184 @@
+/*** Product css start here ***/
+.product-container {
+  @media only screen and (max-width: 360px) {
+    flex-direction: column;
+  }
+  aside {
+    background-color: #eaeaea;
+    @media only screen and (max-width: 360px) {
+      background: none;
+    }
+    #category {
+      margin: 0;
+      @media only screen and (max-width: 360px) {
+        display: none;
+      }
+      li {
+        list-style: none;
+        border-bottom: 2px solid #dddddd;
+        padding: 10px 0 10px 20px;
+        margin: 0 0 0 10px;
+        a {
+          text-decoration: none;
+          color: #686f77;
+          font-weight: 500;
+        }
+      }
+      li.active a {
+        color: #be2655;
+      }
+    }
+    #category-xs {
+      display: none;
+      background: #bf2957;
+      color: #fff;
+      margin-top: 15px;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      @media only screen and (max-width: 360px) {
+        display: block;
+      }
+    }
+  }
+  #product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    li {
+      list-style: none;
+      flex-basis: 21.65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 20px 0 10px -15px #ededed;
+      padding: 10px 15px 0 15px;
+      @media only screen and (max-width: 1200px) {
+        flex-basis: 20.65%;
+      }
+      @media only screen and (max-width: 992px) {
+        flex-basis: 19.5%;
+      }
+      @media only screen and (max-width: 768px) {
+        flex-basis: 44%;
+      }
+      @media only screen and (max-width: 360px) {
+        flex-basis: 100%;
+        align-items: flex-start;
+      }
+      .product-details {
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          background-color: #f0f0f0;
+          margin-bottom: 10px;
+        }
+        @media only screen and (max-width: 360px) {
+          background: none;
+        }
+      }
+      h4 {
+        height: 65px;
+        overflow: hidden;
+        @media only screen and (max-width: 768px) {
+          height: 43px;
+        }
+      }
+      img {
+        width: 100%;
+        @media only screen and (max-width: 768px) {
+          width: 50%;
+        }
+      }
+      .desc {
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        padding: 5px 5px;
+        font-size: 12px;
+        height: 62px;
+        overflow: hidden;
+        @media only screen and (max-width: 360px) {
+          display: none;
+        }
+      }
+      .desc-xs {
+        display: none;
+        margin: 10px 0;
+        padding: 5px 5px;
+        font-size: 12px;
+        @media only screen and (max-width: 360px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .short-desc {
+          background-color: #f0f0f0;
+          max-height: 78px;
+          overflow: hidden;
+          padding: 5px;
+        }
+        .buy-btn {
+          font-size: 13px;
+          outline: none;
+          border: none;
+          background-color: #be2655;
+          color: #fff;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+      .features {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 14px;
+        align-items: baseline;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+        .buy-btn {
+          font-size: 13px;
+          outline: none;
+          border: none;
+          background-color: #be2655;
+          color: #fff;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+      .features-sm {
+        width: 100%;
+        @media only screen and (min-width: 769px) {
+          display: none;
+        }
+        @media only screen and (max-width: 360px) {
+          display: none;
+        }
+        .buy-btn {
+          font-size: 13px;
+          outline: none;
+          border: none;
+          background-color: #be2655;
+          color: #fff;
+          padding: 10px 20px;
+          width: 100%;
+        }
+      }
+    }
+
+    li:after {
+      content: "";
+      height: 10px;
+      width: 100%;
+      border-bottom: 2px dotted #ededed;
+    }
+  }
+  #product.product-empty {
+    justify-content: center;
+    span {
+      margin: 20px;
+    }
+  }
+}
